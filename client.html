@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSocket Client</title>
+
+  <style>
+    * {
+        font-family: sans-serif;
+    }
+    .center {
+        text-align: center;
+    }
+
+    .form {
+        width: 50%;
+        margin: 0 25%;
+        text-align: center;
+    }
+
+    .fileContainer, .localFile {
+        width: 30%;
+        padding: 20px;
+        margin: 10px auto;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .fileContainer *,
+    .localFile * {
+        margin: 10px 0;
+    }
+
+    button {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="center">File Downloader</h1>
+    <div class="form ">
+        <input type="text" id="keywordInput" placeholder="Keyword">
+        <button id="searchBtn">Search</button>
+    </div>
+    <h2 class="center">Found files</h2>
+    <div class="filesList"></div>
+    <h2 class="center">Local files</h2>
+    <div class="localList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
